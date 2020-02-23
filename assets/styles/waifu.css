@@ -1,0 +1,53 @@
+.waifu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 0;
+}
+@media (max-width: 992px) {
+    .waifu {
+        display: none;
+    }
+}
+
+.waifu-tool {
+    display: block;
+    color: #aaa;
+    top: 50px;
+    right: -25px;
+    font-size: 14px;
+    position: absolute;
+}
+.waifu-tool .active {
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+}
+.waifu-tool span {
+    display: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 20px;
+    transition: 0.2s;
+}
+.waifu-tool span:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateY(-25%);
+  }
+}
+
+#tippy-1 {
+    animation: updown 2s ease infinite;
+}
