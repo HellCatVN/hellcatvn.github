@@ -6,6 +6,9 @@
     font-size: 0;
 }
 @media (max-width: 992px) {
+    #tippy-1 {
+        display: none;
+    }
     .waifu {
         display: none;
     }
@@ -49,5 +52,5 @@
 }
 
 #tippy-1 {
-    animation: updown 2s ease infinite;
+  animation: updown 2s ease infinite;
 }
